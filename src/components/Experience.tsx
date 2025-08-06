@@ -13,17 +13,17 @@ const experienceItems: AccordionItem[] = [
   {
     id: 1,
     title: 'Clinical Care Manager',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    content: '6+ years providing high-volume behavioral health care for diverse populations in inpatient and home health settings, including crisis intervention, case reviews with medical directors, and Spanish-language support. Transitioned to managing psychiatric care coordination for homebound members, conducting site visits, and training providers on documentation standards and recovery-oriented practices.'
   },
   {
     id: 2,
     title: 'Licensed Professional Counselor',
-    content: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.'
+    content: '6+ years providing psychotherapy to children, families, and adults, with a specialized focus on serving the Latino community. Collaborated closely with schools, healthcare providers, and child welfare agencies to ensure integrated, culturally responsive treatment planning.'
   },
   {
     id: 3,
     title: 'Senior Clinician',
-    content: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.'
+    content: '10+ years case managing foster families and DCF-committed children, providing in-home psychotherapy and 24-hour crisis intervention. Collaborated on child placement and treatment planning with the Department of Children and Families, while also advocating for the educational needs of children in Wheeler’s Specialized Foster Care Program.'
   }
 ]
 
