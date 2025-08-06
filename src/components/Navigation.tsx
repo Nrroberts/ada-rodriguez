@@ -12,7 +12,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo/Title */}
           <div className="text-custom-gray text-lg font-medium">
-            Ada Rodrigues
+            Ada Rodriguez
           </div>
 
           {/* Desktop Navigation */}

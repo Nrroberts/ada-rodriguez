@@ -69,7 +69,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="hover:text-custom-blue transition-colors"
                   >
-                    Ada Rodrigues
+                    Ada Rodriguez
                   </a>
                   <Image
                     src="/arrow-up-right.svg"

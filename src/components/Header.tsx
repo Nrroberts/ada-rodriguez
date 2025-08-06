@@ -8,7 +8,7 @@ export default function Header() {
         <div className="flex-shrink-0">
           <Image
             src="/profile-1.jpg"
-            alt="Ada Rodrigues"
+            alt="Ada Rodriguez"
             width={320}
             height={384}
             className="w-64 h-80 md:w-80 md:h-96 rounded-[20px] object-cover"
@@ -18,7 +18,7 @@ export default function Header() {
         {/* Title and Subtitle */}
         <div className="text-center md:text-left">
           <h1 className="text-5xl md:text-[52px] font-medium text-black mb-4">
-            Ada Rodrigues
+            Ada Rodriguez
           </h1>
           <h2 className="text-2xl md:text-[24px] text-black">
             Bilingual licensed professional counselor with 20+ years experience

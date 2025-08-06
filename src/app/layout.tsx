@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Ada Rodrigues - Professional Counselor',
+  title: 'Ada Rodriguez - Professional Counselor',
   description: 'Bilingual licensed professional counselor with 20+ years experience',
 }
 
