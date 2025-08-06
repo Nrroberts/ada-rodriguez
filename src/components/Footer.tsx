@@ -64,7 +64,7 @@ export default function Footer() {
                 </div>
                 <div className="text-lg text-black flex items-center justify-between flex-1 sm:ml-8">
                   <a 
-                    href="https://www.linkedin.com/in/ada-rodrigues" 
+                    href="https://www.linkedin.com/in/ada-g-rodriguez-ma-lpc-93b65885/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="hover:text-custom-blue transition-colors"

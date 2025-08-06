@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-6">
       <div className="space-y-6 text-lg text-black leading-relaxed">
           <p>
             I am a bilingual and bicultural licensed professional counselor with over 20 years of experience across diverse 

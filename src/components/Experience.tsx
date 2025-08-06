@@ -76,7 +76,7 @@ export default function Experience() {
   }
 
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-[40px] text-custom-gray font-medium mb-8 text-center">
           Experience
@@ -87,10 +87,10 @@ export default function Experience() {
             const isOpen = openItems.includes(item.id)
             
             return (
-              <div key={item.id} className="border-b border-gray-200">
+              <div key={item.id} className="bg-gray-100 rounded-lg overflow-hidden transition-all duration-300 ease-in-out hover:bg-gray-200 group">
                 <button
                   onClick={() => toggleItem(item.id)}
-                  className="w-full py-4 flex items-center text-left focus:outline-none group"
+                  className="w-full p-4 flex items-center text-left focus:outline-none"
                 >
                   <div className="text-custom-gray mr-3 group-hover:text-custom-blue transition-colors">
                     {getIconForItem(item.id)}
@@ -106,7 +106,7 @@ export default function Experience() {
                 <div className={`overflow-hidden transition-all duration-300 ease-in-out ${
                   isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}>
-                  <div className="pb-6 pl-8">
+                  <div className="px-4 pb-4 pl-11">
                     <p className="text-black text-base leading-relaxed">
                       {item.content}
                     </p>
