@@ -1,13 +1,17 @@
+'use client'
+
 import Image from 'next/image'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Footer() {
+  const { t } = useLanguage()
   return (
     <footer className="bg-white border-t border-gray-200 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-16">
           {/* Contact Header */}
           <div className="md:flex-shrink-0">
-            <h3 className="text-lg text-black font-medium">Contact</h3>
+            <h3 className="text-lg text-black font-medium">{t('contact')}</h3>
           </div>
 
           {/* Contact Information Table */}
@@ -16,7 +20,7 @@ export default function Footer() {
               {/* Email Row */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b border-gray-200">
                 <div className="text-lg text-black font-medium w-full sm:w-40 mb-1 sm:mb-0">
-                  Email
+                  {t('email')}
                 </div>
                 <div className="text-lg text-black flex items-center justify-between flex-1 sm:ml-8">
                   <a 
@@ -38,7 +42,7 @@ export default function Footer() {
               {/* Phone Row */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b border-gray-200">
                 <div className="text-lg text-black font-medium w-full sm:w-40 mb-1 sm:mb-0">
-                  Phone Number
+                  {t('phone_number')}
                 </div>
                 <div className="text-lg text-black flex items-center justify-between flex-1 sm:ml-8">
                   <a 
@@ -60,7 +64,7 @@ export default function Footer() {
               {/* LinkedIn Row */}
               <div className="flex flex-col sm:flex-row sm:items-center justify-between py-2 border-b border-gray-200">
                 <div className="text-lg text-black font-medium w-full sm:w-40 mb-1 sm:mb-0">
-                  LinkedIn
+                  {t('linkedin')}
                 </div>
                 <div className="text-lg text-black flex items-center justify-between flex-1 sm:ml-8">
                   <a 

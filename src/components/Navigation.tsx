@@ -2,9 +2,15 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const { language, setLanguage, t } = useLanguage()
+
+  const toggleLanguage = () => {
+    setLanguage(language === 'en' ? 'es' : 'en')
+  }
 
   return (
     <nav className="sticky top-0 bg-white border-b border-gray-200 z-50 shadow-sm">
@@ -21,7 +27,7 @@ export default function Navigation() {
               href="mailto:ada698@comcast.net" 
               className="text-custom-gray text-lg hover:text-custom-blue transition-colors flex items-center gap-2"
             >
-              Email
+              {t('email')}
               <Image
                 src="/arrow-up-right.svg"
                 alt=""
@@ -34,7 +40,7 @@ export default function Navigation() {
               href="tel:860-559-0461" 
               className="text-custom-gray text-lg hover:text-custom-blue transition-colors flex items-center gap-2"
             >
-              Phone
+              {t('phone')}
               <Image
                 src="/arrow-up-right.svg"
                 alt=""
@@ -43,8 +49,11 @@ export default function Navigation() {
                 className="text-current"
               />
             </a>
-            <button className="text-custom-gray text-lg hover:text-custom-blue transition-colors flex items-center gap-2">
-              Español
+            <button 
+              onClick={toggleLanguage}
+              className="text-custom-gray text-lg hover:text-custom-blue transition-colors flex items-center gap-2"
+            >
+              {language === 'en' ? t('spanish') : t('english')}
               <Image
                 src="/arrow-up-right.svg"
                 alt=""
@@ -95,12 +104,12 @@ export default function Navigation() {
                 href="mailto:ada698@comcast.net" 
                 className="flex items-center justify-between text-custom-gray text-lg hover:text-custom-blue transition-colors py-2"
               >
-                Email
+                {t('email')}
                 <Image
                   src="/arrow-up-right.svg"
                   alt=""
-                  width={12}
-                  height={12}
+                  width={16}
+                  height={16}
                   className="text-current"
                 />
               </a>
@@ -108,22 +117,25 @@ export default function Navigation() {
                 href="tel:860-559-0461" 
                 className="flex items-center justify-between text-custom-gray text-lg hover:text-custom-blue transition-colors py-2"
               >
-                Phone
+                {t('phone')}
                 <Image
                   src="/arrow-up-right.svg"
                   alt=""
-                  width={12}
-                  height={12}
+                  width={16}
+                  height={16}
                   className="text-current"
                 />
               </a>
-              <button className="flex w-full items-center justify-between text-custom-gray text-lg hover:text-custom-blue transition-colors py-2">
-                Español
+              <button 
+                onClick={toggleLanguage}
+                className="flex w-full items-center justify-between text-custom-gray text-lg hover:text-custom-blue transition-colors py-2"
+              >
+                {language === 'en' ? t('spanish') : t('english')}
                 <Image
                   src="/arrow-up-right.svg"
                   alt=""
-                  width={12}
-                  height={12}
+                  width={16}
+                  height={16}
                   className="text-current"
                 />
               </button>

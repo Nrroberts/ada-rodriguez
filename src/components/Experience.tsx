@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 interface AccordionItem {
   id: number
@@ -66,6 +67,7 @@ const getIconForItem = (id: number) => {
 
 export default function Experience() {
   const [openItems, setOpenItems] = useState<number[]>([])
+  const { t } = useLanguage()
 
   const toggleItem = (id: number) => {
     setOpenItems(prev =>
@@ -79,7 +81,7 @@ export default function Experience() {
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-[40px] text-custom-gray font-medium mb-8 text-center">
-          Experience
+          {t('experience')}
         </h2>
         
         <div className="space-y-4">
@@ -96,7 +98,7 @@ export default function Experience() {
                     {getIconForItem(item.id)}
                   </div>
                   <span className="text-black text-base font-medium flex-1">
-                    {item.title}
+                    {t(`exp${item.id}_title`)}
                   </span>
                   <span className="text-custom-gray text-xl ml-4 transition-transform duration-200 ease-in-out">
                     {isOpen ? '−' : '+'}
@@ -108,7 +110,7 @@ export default function Experience() {
                 }`}>
                   <div className="px-4 pb-4 pl-11">
                     <p className="text-black text-base leading-relaxed">
-                      {item.content}
+                      {t(`exp${item.id}_content`)}
                     </p>
                   </div>
                 </div>

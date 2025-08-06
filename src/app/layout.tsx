@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { LanguageProvider } from '@/contexts/LanguageContext'
 
 export const metadata: Metadata = {
   title: 'Ada Rodriguez - Professional Counselor',
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-inter antialiased">
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   )

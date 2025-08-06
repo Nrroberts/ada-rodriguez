@@ -1,6 +1,10 @@
+'use client'
+
 import Image from 'next/image'
+import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Header() {
+  const { t } = useLanguage()
   return (
     <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pb-6">
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
@@ -18,10 +22,10 @@ export default function Header() {
         {/* Title and Subtitle */}
         <div className="text-center md:text-left">
           <h1 className="text-5xl md:text-[52px] font-medium text-black mb-4">
-            Ada Rodriguez
+            {t('title')}
           </h1>
           <h2 className="text-2xl md:text-[24px] text-black">
-            Bilingual licensed professional counselor with 20+ years experience
+            {t('subtitle')}
           </h2>
         </div>
       </div>
