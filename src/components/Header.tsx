@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Header() {
@@ -10,7 +9,7 @@ export default function Header() {
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         {/* Headshot */}
         <div className="flex-shrink-0">
-          <Image
+          <img
             src="/profile-1.jpg"
             alt="Ada Rodriguez"
             width={320}

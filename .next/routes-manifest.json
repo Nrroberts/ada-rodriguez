@@ -2,16 +2,8 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/ada-rodriguez",
+  "basePath": "",
   "redirects": [
-    {
-      "source": "/ada-rodriguez",
-      "destination": "/ada-rodriguez/",
-      "basePath": false,
-      "internal": true,
-      "statusCode": 308,
-      "regex": "^/ada-rodriguez$"
-    },
     {
       "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
       "destination": "/:file",

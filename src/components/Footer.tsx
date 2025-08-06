@@ -1,6 +1,5 @@
 'use client'
 
-import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Footer() {
@@ -29,7 +28,7 @@ export default function Footer() {
                   >
                     ada698@comcast.net
                   </a>
-                  <Image
+                  <img
                     src="/arrow-up-right.svg"
                     alt=""
                     width={16}
@@ -51,7 +50,7 @@ export default function Footer() {
                   >
                     860 559 0461
                   </a>
-                  <Image
+                  <img
                     src="/arrow-up-right.svg"
                     alt=""
                     width={16}
@@ -75,7 +74,7 @@ export default function Footer() {
                   >
                     Ada Rodriguez
                   </a>
-                  <Image
+                  <img
                     src="/arrow-up-right.svg"
                     alt=""
                     width={16}

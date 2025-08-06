@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/ada-rodriguez' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/ada-rodriguez' : ''
+  assetPrefix: process.env.GITHUB_PAGES ? '/ada-rodriguez' : '',
+  basePath: process.env.GITHUB_PAGES ? '/ada-rodriguez' : ''
 }
 
 module.exports = nextConfig

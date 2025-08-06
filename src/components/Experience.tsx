@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 interface AccordionItem {
@@ -32,7 +31,7 @@ const getIconForItem = (id: number) => {
   switch (id) {
     case 1:
       return (
-        <Image
+        <img
           src="/hospital.svg"
           alt=""
           width={20}
@@ -42,7 +41,7 @@ const getIconForItem = (id: number) => {
       )
     case 2:
       return (
-        <Image
+        <img
           src="/shield-plus.svg"
           alt=""
           width={20}
@@ -52,7 +51,7 @@ const getIconForItem = (id: number) => {
       )
     case 3:
       return (
-        <Image
+        <img
           src="/scan-heart.svg"
           alt=""
           width={20}

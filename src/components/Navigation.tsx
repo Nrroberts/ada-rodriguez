@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 export default function Navigation() {
@@ -28,7 +27,7 @@ export default function Navigation() {
               className="text-custom-gray text-lg hover:text-custom-blue transition-colors flex items-center gap-2"
             >
               {t('email')}
-              <Image
+              <img
                 src="/arrow-up-right.svg"
                 alt=""
                 width={16}
@@ -41,7 +40,7 @@ export default function Navigation() {
               className="text-custom-gray text-lg hover:text-custom-blue transition-colors flex items-center gap-2"
             >
               {t('phone')}
-              <Image
+              <img
                 src="/arrow-up-right.svg"
                 alt=""
                 width={16}
@@ -54,7 +53,7 @@ export default function Navigation() {
               className="text-custom-gray text-lg hover:text-custom-blue transition-colors flex items-center gap-2"
             >
               {language === 'en' ? t('spanish') : t('english')}
-              <Image
+              <img
                 src="/arrow-up-right.svg"
                 alt=""
                 width={16}
@@ -105,7 +104,7 @@ export default function Navigation() {
                 className="flex items-center justify-between text-custom-gray text-lg hover:text-custom-blue transition-colors py-2"
               >
                 {t('email')}
-                <Image
+                <img
                   src="/arrow-up-right.svg"
                   alt=""
                   width={16}
@@ -118,7 +117,7 @@ export default function Navigation() {
                 className="flex items-center justify-between text-custom-gray text-lg hover:text-custom-blue transition-colors py-2"
               >
                 {t('phone')}
-                <Image
+                <img
                   src="/arrow-up-right.svg"
                   alt=""
                   width={16}
@@ -131,7 +130,7 @@ export default function Navigation() {
                 className="flex w-full items-center justify-between text-custom-gray text-lg hover:text-custom-blue transition-colors py-2"
               >
                 {language === 'en' ? t('spanish') : t('english')}
-                <Image
+                <img
                   src="/arrow-up-right.svg"
                   alt=""
                   width={16}
