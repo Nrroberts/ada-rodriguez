@@ -2,13 +2,17 @@ import Image from 'next/image'
 
 export default function Header() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 pb-6">
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         {/* Headshot */}
         <div className="flex-shrink-0">
-          <div className="w-64 h-80 md:w-80 md:h-96 bg-gray-200 rounded-[20px] flex items-center justify-center">
-            <span className="text-gray-500 text-lg">Headshot</span>
-          </div>
+          <Image
+            src="/profile-1.jpg"
+            alt="Ada Rodrigues"
+            width={320}
+            height={384}
+            className="w-64 h-80 md:w-80 md:h-96 rounded-[20px] object-cover"
+          />
         </div>
 
         {/* Title and Subtitle */}

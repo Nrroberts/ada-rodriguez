@@ -1,8 +1,7 @@
 export default function About() {
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div className="max-w-4xl">
-        <div className="space-y-6 text-lg text-black leading-relaxed">
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12">
+      <div className="space-y-6 text-lg text-black leading-relaxed">
           <p>
             I am a bilingual and bicultural licensed professional counselor with over 20 years of experience across diverse 
             settings, including a nonprofit mental health clinic, a managed care organization, and a public elementary school. 
@@ -22,7 +21,6 @@ export default function About() {
             appointments are available Monday through Thursday.
           </p>
         </div>
-      </div>
     </section>
   )
 }

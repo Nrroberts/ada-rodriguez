@@ -13,6 +13,7 @@ const config: Config = {
       },
       colors: {
         'custom-gray': '#474747',
+        'custom-blue': '#5290f2',
       },
     },
   },
